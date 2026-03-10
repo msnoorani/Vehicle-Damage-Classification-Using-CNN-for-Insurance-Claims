@@ -1,0 +1,46 @@
+# Dataset — Vehicle Damage Insurance Verification
+
+This project uses the **Ripik Hackfest Vehicle Damage Dataset** from Kaggle.
+
+## Download
+
+🔗 [Kaggle Dataset Link](https://www.kaggle.com/datasets/sudhanshu2198/ripik-hackfest)
+
+You will need a free Kaggle account to download.
+
+## Setup
+
+After downloading, place the files in this folder as follows:
+
+```
+data/
+├── train/
+│   ├── images/          ← training images (.jpg)
+│   └── train.csv        ← filename + label mappings
+└── test/
+    ├── images/          ← test images (.jpg)
+    └── test.csv         ← filename mappings
+```
+
+## Label Mapping
+
+| Label ID | Damage Class |
+|----------|-------------|
+| 2 | Scratch |
+| 3 | Flat Tire |
+| 4 | Dent |
+| 5 | Window Broken |
+| 6 | Lamp Broken |
+
+## Dataset Statistics
+
+| Class | Train Samples |
+|-------|--------------|
+| Scratch | 384 |
+| Dent | 340 |
+| Window Broken | 189 |
+| Lamp Broken | 169 |
+| Flat Tire | 70 |
+| **Total** | **~1,152** |
+
+> Note: The dataset has class imbalance. This was addressed using data augmentation during training.
